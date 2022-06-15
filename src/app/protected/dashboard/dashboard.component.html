@@ -1,0 +1,12 @@
+ <h1>Dashboard</h1>
+ <hr>
+
+ <p>Esta pagina solo funciona si estas autenticado</p>
+
+ <h4>User info</h4>
+ <pre> {{ usuario | json }}</pre> 
+ <pre> Inicio de sesion correcto como {{ usuario.role }}</pre> 
+
+ <button class="btn btn-primary" (click)="logout()">
+    Logout
+</button>
